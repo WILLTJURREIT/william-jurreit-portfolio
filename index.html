@@ -43,6 +43,8 @@
     </nav>
 
     <section class="hero" aria-labelledby="hero-title">
+
+      
   <article class="hero-content container" data-aos="fade-up">
     <section class="hero-copy">
       <p class="eyebrow">Web Development • Digital Marketing • AI Solutions</p>
@@ -63,6 +65,17 @@
         <a href="#contact" class="btn btn-outline-light btn-lg">Hire Me</a>
         <a href="assets/docs/william_jurreit_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-lg">Resume</a>
       </nav>
+
+      <div class="hero-stats">
+
+    <div class="visitor-counter">
+        <i class="bi bi-eye-fill"></i>
+
+        <strong id="visitorCount" class="loading-counter">Loading...</strong>
+    </div>
+
+</div>
+      
 
       <address class="social-links" aria-label="Social links">
         <a href="https://github.com/WILLTJURREIT" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
@@ -203,8 +216,8 @@
 
     <section id="resume" class="page-section" aria-labelledby="resume-title">
       <header class="section-header container" data-aos="fade-up">
-        <p>Resume</p>
-        <h2 id="resume-title">Download or view my resume</h2>
+        <p>Resume & Certifications</p>
+        <h2 id="resume-title">View my resume and professional credentials</h2>
       </header>
 
       <article class="resume-card container" data-aos="fade-up">
@@ -213,9 +226,19 @@
           <p>Technical skills, education, projects, certifications, and professional experience.</p>
         </header>
 
+      <div class="resume-actions"></div>
         <a href="assets/docs/william_jurreit_resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
           <i class="bi bi-download"></i> Open Resume
         </a>
+
+        <a
+            href="certifications.html"
+            class="btn btn-outline-primary">
+
+            <i class="bi bi-award-fill"></i>
+            View Certifications
+        </a>
+      </div>
       </article>
     </section>
 
@@ -351,6 +374,7 @@
   <script src="assets/js/view.js"></script>
   <script src="assets/js/controller.js"></script>
   <script src="assets/js/main.js"></script>
+  <script type="module" src="assets/js/viewCounter.js"></script>
 
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </body>

@@ -556,6 +556,13 @@
     justify-content: space-between;
     gap: 1.5rem;
   }
+
+  .resume-actions{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+    margin-top:1.5rem;
+}
   
   .contact-card,
   .contact-form {
@@ -1148,4 +1155,223 @@
 .sentinel-actions a:hover {
   border-color: var(--primary);
   color: #fff;
+}
+
+
+
+/* Credential Page*/
+
+.credentials-page {
+  min-height: 100vh;
+  padding: 7rem 0 5rem;
+  background: var(--bg);
+}
+
+.credentials-hero {
+  margin-bottom: 3rem;
+}
+
+.credentials-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+}
+
+.credentials-intro {
+  max-width: 720px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.credential-card {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.credential-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.credential-content {
+  padding: 1.5rem;
+}
+
+.credential-type {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
+}
+
+.credential-content h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.credential-content p {
+  color: var(--muted);
+}
+
+@media (max-width: 768px) {
+  .credentials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .credential-card img {
+    height: 220px;
+  }
+}
+
+.featured-credential{
+    border:2px solid var(--primary);
+    box-shadow:0 0 30px rgba(0,140,255,.15);
+}
+
+.featured-credential .credential-type{
+    color:#58b7ff;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.featured-credential h2{
+    color:#fff;
+}
+
+.credential-preview {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
+.credential-preview img {
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+.credential-preview:hover img {
+  transform: scale(1.03);
+  opacity: .9;
+}
+
+.credential-modal .modal-content {
+  background: var(--surface-solid);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.credential-modal .modal-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.credential-modal .modal-body {
+  padding: 1rem;
+  background: #020617;
+}
+
+.credential-modal-image {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* PORTFOLIO VIEW COUNTER */
+
+.hero-stats{
+    margin-top:2rem;
+}
+
+.visitor-counter{
+
+    display:inline-flex;
+    align-items:center;
+    gap:1rem;
+    padding:1rem 1.5rem;
+    border-radius:14px;
+    border:1px solid var(--border);
+    background:rgba(255,255,255,.04);
+    backdrop-filter:blur(12px);
+
+}
+
+.visitor-counter i{
+
+    font-size:1.8rem;
+    color:var(--primary);
+
+}
+
+.visitor-counter small{
+
+    display:block;
+    color:var(--muted);
+    font-size:.8rem;
+
+}
+
+.visitor-counter strong{
+
+    display:block;
+    font-size:1.35rem;
+    color:white;
+    font-weight:800;
+
+}
+
+@keyframes counterGlow{
+
+    0%{
+        text-shadow:
+        0 0 0px #1da1ff;
+    }
+
+    50%{
+        text-shadow:
+        0 0 10px #1da1ff,
+        0 0 20px #1da1ff,
+        0 0 30px #1da1ff;
+    }
+
+    100%{
+        text-shadow:
+        0 0 0px #1da1ff;
+    }
+
+}
+
+.loading-counter{
+    animation:
+        counterPulse 1.4s ease-in-out infinite,
+        counterGlow 1.8s ease infinite;
+}
+
+@keyframes counterPulse {
+  0% {
+    opacity: .45;
+    transform: scale(.97);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+
+  100% {
+    opacity: .45;
+    transform: scale(.97);
+  }
 }
