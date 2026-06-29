@@ -127,6 +127,22 @@ const PortfolioModel = {
         demoUrl: "",
         socialMediaUrl: "https://www.facebook.com/profile.php?id=61580797105546",
         githubUrl: ""
-      }
+      },
+
+      {
+        id: 7,
+        title: "Interactive JavaScript Pong Game",
+        category: "web",
+        icon: "bi-controller",
+        image: "assets/img/projects/pong-game.png",
+        summary: "A fully interactive browser-based Pong game built with vanilla JavaScript featuring game physics, AI opponent, responsive controls, audio, and customizable gameplay.",
+        tags: ["JavaScript", "Game Development", "HTML5", "CSS3", "Responsive Design"],
+        problem:"Build an interactive browser game without external game engines while creating smooth gameplay, responsive controls, collision detection, and a computer-controlled opponent.",
+        solution:"Developed the game entirely with vanilla JavaScript using a real-time game loop, collision detection, score tracking, AI paddle movement, responsive layouts, touch support, audio effects, and customizable themes.",
+        outcome:"Strengthened my understanding of JavaScript application architecture, animation timing, event handling, object movement, collision detection, DOM manipulation, and responsive game development.",
+        demoUrl: "https://willtjurreit.github.io/mobile-pong-game/",
+        githubUrl: "https://github.com/WILLTJURREIT/ping_pong"
+  }
+
     ]
   };
