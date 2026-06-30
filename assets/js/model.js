@@ -50,8 +50,7 @@ const PortfolioModel = {
         problem: "The project needed structured application logic, database interaction, authentication, and admin access.",
         solution: "I built core platform features using PHP, MySQL, JavaScript, sessions, login systems, and organized MVC-style code.",
         outcome: "This project strengthened my backend fundamentals, database design, SQL queries, testing, and debugging.",
-        demoUrl: "",
-        noticeUrl: "https://mystermashhub.free.nf/Mystermash-Productions/index.php?controller=main&action=home",
+        demoUrl: "https://mystermashhub.free.nf/Mystermash-Productions/index.php?controller=main&action=home",
         githubUrl: ""
       },
       {
