@@ -110,6 +110,7 @@ const PortfolioModel = {
         outcome: "This project built my ability to connect design, messaging, market research, and customer acquisition strategy.",
         demoUrl: "",
         caseStudyUrl: "https://learndigital.dev/students/tysen-jurreit/",
+        presentationUrl: "https://www.youtube.com/shorts/lTKpoeABc34",
         githubUrl: ""
       },
       {

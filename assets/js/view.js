@@ -101,6 +101,17 @@ const PortfolioView = {
     </a>
   ` : ""}
 
+  ${project.presentationUrl ? `
+  <a
+    href="${project.presentationUrl}"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="btn btn-outline-light">
+    <i class="bi bi-play-circle"></i>
+    Watch Presentation
+  </a>
+` : ""}
+
    ${project.websiteUrl ? `
     <a
       href="${project.websiteUrl}"
@@ -144,4 +155,6 @@ const PortfolioView = {
   
       dialog.showModal();
     }
+
+    
   };
